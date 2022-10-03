@@ -139,27 +139,53 @@ counters.forEach(counter => {
   updateCount();
 })
 
-
 //about page progress bar func start
-function updateProgressBar(progressBar, value) {
-  value = Math.round(value);
-  progressBar.querySelector('.progressBar__bars--fill').style.width = `${value}%`;
-  progressBar.querySelector('.progressBar__bars--percent').textContent = `${value}%`;
-}
+
+// function updateProgressBar(progressBar, value) {
+//   value = Math.round(value);
+
+//   progressBar.querySelector('.progressBar__bars--fill').style.width = `${value}%`;
+//   progressBar.querySelector('.progressBar__bars--percent').textContent = `${value}%`;
+  
+// }
 
 //bar 1
-const pBarOne = document.querySelector('.progressBar__1');
-updateProgressBar(pBarOne, 75);
+// const pBarOne = document.querySelector('.progressBar__1');
+// updateProgressBar(pBarOne, 75);
 
 //bar 2
-const pBarTwo = document.querySelector('.progressBar__2');
-updateProgressBar(pBarTwo, 85);
+// const pBarTwo = document.querySelector('.progressBar__2');
+// updateProgressBar(pBarTwo, 85);
 
 //bar 3
-const pBarThree = document.querySelector('.progressBar__3');
-updateProgressBar(pBarThree, 90);
+// const pBarThree = document.querySelector('.progressBar__3');
+// updateProgressBar(pBarThree, 90);
 
 //bar 4
-const pBarFour = document.querySelector('.progressBar__4');
-updateProgressBar(pBarFour, 80);
+// const pBarFour = document.querySelector('.progressBar__4');
+// updateProgressBar(pBarFour, 80);
+
+const progress = document.querySelector('.progressBar__content');
+const progressBarPercents = [75, 85, 90, 80];
+
+window.addEventListener('scroll', () => {
+  updateProgressBar();
+})
+
+const updateProgressBar = () => {
+
+  if (window.pageYOffset + window.innerHeight >= progress.offsetTop + 500) {
+    document.querySelectorAll('.progressBar__bars--fill').forEach((bar, i) => {
+      bar.style.width = `${progressBarPercents[i]}%`;
+      bar.nextElementSibling.textContent = `${progressBarPercents[i]}%`;
+    })
+  }
+}
+
+updateProgressBar();
+
 //about page progress bar func end
+
+window.addEventListener('resize', () => {
+  window.location.reload();
+})

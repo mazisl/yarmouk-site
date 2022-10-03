@@ -24,6 +24,12 @@
   --size-50: 3.125rem;
   --size-100: 6.25rem;
   --size-150: 9.375rem;
+
+  /* --marquee-width: 80vw;
+  --marquee-height: 15vh;
+  --marquee-elms-displayed: 4;
+  --marquee-elm-width: calc(var(--marquee-width) / var(--marquee-elms-displayed));
+  --marquee-duration-animation: calc(var(--marquee-elms) * 3s); */
 }
 
 html {scroll-behavior: smooth;}

@@ -741,6 +741,82 @@ ul.navbar-nav {
   color: white;
 }
 
+/*sliding marquee start*/
+.client-logos {padding: 50px 0;}
+
+.client-logos-header {margin-bottom: 40px;}
+
+.marquee {
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  width: calc(250px * 16);
+  animation: scroll 40s linear infinite;
+}
+
+.marquee-content:hover {animation-play-state: paused;} /*pause slide on hover*/
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 8));
+  }
+}
+
+.logo-wrapper {
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px; /*works with img hover transform: translateZ(20px)*/
+}
+
+.marquee-content img {
+  width: 100%;
+  transition: transform 1s;
+}
+
+.marquee-content .adnoc {
+  height: 180px;
+  width: 200px;
+}
+
+.marquee-content img:hover {transform: translateZ(20px);}
+
+.marquee::before,
+.marquee::after {
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+
+.marquee::before {
+  left: 0;
+  top: 0;
+}
+
+.marquee::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+/*sliding marquee end*/
+
 /*home page end*/
 
 
@@ -933,7 +1009,7 @@ ul.navbar-nav {
   height: 100%;
   background: #009579;
 
-  transition: all 1.5s;
+  transition: width 0.5s 0.5s ease-in-out;
 }
 
 .progressBar__bars--percent {
