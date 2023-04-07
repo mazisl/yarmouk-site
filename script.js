@@ -9,7 +9,7 @@ window.onscroll = function () {
 }
 /*change header bg color on scroll*/
 
-//nav dropdown menu
+//nav services link dropdown menu
 document.addEventListener('click', e => {
   const isDropdownButton = e.target.matches("[data-dropdown-button]")
   if (!isDropdownButton && e.target.closest('[data-dropdown]') != null) return
@@ -25,7 +25,7 @@ document.addEventListener('click', e => {
     dropdown.classList.remove('active')
   })
 })
-//nav dropdown menu
+//nav services link dropdown menu
 
 //hamburger menu for small screens
 const navButton = document.querySelector('button[aria-expanded]');
@@ -89,7 +89,7 @@ class RevealOnScroll {
           this.calculateIfScrolledTo(el)
         }
       })
-    }, 500))
+    }, 200))
   }
 
   calculateIfScrolledTo(el) {
@@ -186,6 +186,6 @@ updateProgressBar();
 
 //about page progress bar func end
 
-window.addEventListener('resize', () => {
-  window.location.reload();
-})
+// window.addEventListener('resize', () => {
+//   window.location.reload();
+// })

@@ -254,9 +254,9 @@ img {
   .footer-bottom-wrapper {max-width: 720px;}
 }
 
-@media (min-width: 992) {
-  footer .container {max-width: 960px;}
-}
+// @media (min-width: 992) {
+//   footer .container {max-width: 960px;}
+// }
 
 @media (min-width: 1300px) {
   .container {max-width: 1250px;}

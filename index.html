@@ -112,7 +112,11 @@
         <button class="slider-button next" data-slider-btn="next">&#8658;</button>
         <ul data-slides>
           <li class="slide" data-active>
-            <img src="assets/hero/hero-1.jpg" alt="ADNOC structures by Al Yarmouk Steel">
+            <!-- <picture>
+              <source srcset="assets/hero/hero-1-trans-logo-sm.jpg" media="(max-width: 600px)">
+              <img src="assets/hero/hero-1-transparent-logo.jpg" alt="ADNOC structures by Al Yarmouk Steel">
+            </picture> -->
+            <img src="assets/hero/hero-1-transparent-logo.jpg" alt="ADNOC structures by Al Yarmouk Steel">
             <div class="hero-wrapper container">
               <h1 class="hero-header">
                 We turn your concept into reality
@@ -352,9 +356,9 @@
       
               <div class="swiper-slide project project-6">
                 <div class="proj-img six">
-                  <img src="assets/projects/naffco/naffco-main.jpg" alt="">
+                  <img src="assets/projects/naffco/naffco-main.png" alt="">
                   <div class="proj-img__overlay proj-img__overlay--blur">
-                    <div class="proj-img__title">NAFFCO</div>
+                    <div class="proj-img__title">KIPIC</div>
                     <a class="proj-img__link" href="proj-single6.html" target="_blank"><i class="fa-solid fa-arrow-right"></i></a>
                   </div> <!--proj-img__overlay-->
                 </div>
@@ -394,10 +398,10 @@
     <section class="testimonials">
       <div class="container">
         <div class="main-image revOnScrl">
-          <img src="assets/testimonial/image.jpg" alt="">
+          <img src="assets/testimonial/image-sm.jpg" alt="">
         </div> <!--main-image-->
 
-        <div class="testim-part revOnScrl">
+        <div class="testim-part">
           <div class="section-initiator">
             <div class="hr"></div>
             <span>TESTIMONIALS</span>
@@ -417,7 +421,7 @@
                 </div> <!--image-->
                 <p class="details">
                   <span class="name">Obaid Al Shamsi</span>
-                  <span class="position">Project Co-ordinator, AD Cruise Terminal</span>
+                  <span class="position">Project Co-ordinator, Gulf Development Corp.</span>
                 </p> <!--details-->
               </div> <!--person-->
             </div> <!--testimonyNperson-->
@@ -434,7 +438,7 @@
                 </div> <!--image-->
                 <p class="details">
                   <span class="name">Kanu Patel</span>
-                  <span class="position">Project in-charge, Tawam Hospital</span>
+                  <span class="position">Project in-charge, TDC Contracting</span>
                 </p> <!--details-->
               </div> <!--person-->
             </div> <!--testimonyNperson-->
@@ -451,7 +455,7 @@
                 </div> <!--image-->
                 <p class="details">
                   <span class="name">Nad Al Jabbar</span>
-                  <span class="position">Project Manager, ADNOC</span>
+                  <span class="position">Project Manager, Shafar Contracting LLC</span>
                 </p> <!--details-->
               </div> <!--person-->
             </div> <!--testimonyNperson-->
@@ -471,7 +475,7 @@
           <h2 class="reqServ-header-main h2-small">Have any upcoming project?</h2>
         </div> <!--reqServ-txt-wrapper-->
 
-        <a class="btn" href="">REQUEST SERVICES</a>
+        <a class="btn" href="contact.html">REQUEST SERVICES</a>
       </div>
     </section> <!--request-services-->
 
@@ -661,14 +665,17 @@
         breakpoints: {
           320: {
             slidesPerView: 1,
+            slidesPerGroup: 1
             // spaceBetween: 20,
           },
           640: {
             slidesPerView: 2,
+            slidesPerGroup: 2
             // spaceBetween: 40,
           },
           960: {
             slidesPerView: 3,
+            slidesPerGroup: 3
             // spaceBetween: 50,
           },
           1250: {

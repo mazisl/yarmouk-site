@@ -347,6 +347,7 @@ ul.navbar-nav {
   max-width: 650px;
   margin-right: 25px;
   background-color: var(--theme-color);
+  flex-basis: 50%;
 }
 
 .about-image img {
@@ -374,6 +375,7 @@ ul.navbar-nav {
 
 .aboutSection-text-wrapper {
   margin-left: 25px;
+  flex-basis: 50%;
 }
 
 .aboutSection-text-wrapper .about-text {
@@ -413,7 +415,7 @@ ul.navbar-nav {
 /*our services start*/
 .our-services {
   width: 100%;
-  background-image: url(../assets/services-bg.png);
+  background-image: url(../assets/services-bg-sm.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -488,7 +490,7 @@ ul.navbar-nav {
 .stats {
   background-image: url(../assets/stats-bg.jpg);
   background-repeat: no-repeat;
-  background-position: right center;
+  // background-position: cover;
   background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: overlay;
   padding: 100px 0 20px;
@@ -647,12 +649,12 @@ ul.navbar-nav {
 
 .testimonials .container {
   display: flex;
+  align-items: center;
 }
 
 .testimonials .main-image {
-  max-width: 700px;
-  max-height: 500px;
   padding-right: 20px;
+  width: 50%;
 }
 
 .testimonials .main-image img {
@@ -663,6 +665,7 @@ ul.navbar-nav {
 
 .testimonials .testim-part {
   width: 50%;
+  padding-left: 20px;
 }
 
 .testim-part .testimonyNperson {
@@ -720,9 +723,9 @@ ul.navbar-nav {
 
 /*request-services start*/
 .request-services {
-  background-image: url(../assets/request-services-bg2.jpg);
+  background-image: url(../assets/request-services-bg.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: overlay;
@@ -823,7 +826,7 @@ ul.navbar-nav {
 /*about page start*/
 /*about page hero start*/
 .aboutPageHero {
-  background-image: url(../assets/Contract-Management.jpg);
+  background-image: url(../assets/Contract-Management-sm.jpg);
 }
 
 /*who we are section start*/
@@ -881,7 +884,7 @@ ul.navbar-nav {
 
 /*values section start*/
 .values {
-  background: url(../assets/steel-building.jpg);
+  background: url(../assets/steel-building-sm.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -944,7 +947,7 @@ ul.navbar-nav {
 }
 
 .progressBar__pictures {
-  background: url(../assets/progress-sec-bg.jpeg);
+  background: url(../assets/progress-sec-bg-sm.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1024,7 +1027,7 @@ ul.navbar-nav {
 
 /*workWithUs section start*/
 .workWithUs {
-  background-image: url(../assets/extras/grinder.jpg);
+  background-image: url(../assets/extras/grinder-sm.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1434,7 +1437,7 @@ ul.navbar-nav {
   margin: 0;
   background-color: rgb(236, 236, 236);
   flex-basis: 80%;
-  height: 75px;
+  min-height: 85px;
   padding-left: 20px;
   color: var(--font-color-dark);
 }
@@ -1443,7 +1446,7 @@ ul.navbar-nav {
   display: flex;
   background-color: #e75b60;
   flex-basis: 20%;
-  height: 75px;
+  min-height: 85px;
   color: var(--font-color-dark);
   font-size: 23px;
   position: relative;
@@ -1534,7 +1537,7 @@ ul.navbar-nav {
 /*txt-n-img-block styles*/
 .proj-single-txt-n-img-block {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   grid-column-gap: 50px;
   grid-row-gap: 80px;
 
@@ -1621,7 +1624,7 @@ ul.navbar-nav {
 .map-form-img__img-div img {
   height: 100%;
   object-fit: cover;
-  object-position: 65% center;
+  object-position: 45% center;
 }
 /*section map-form-img end*/
 
@@ -1852,7 +1855,7 @@ input[value="Get Started"] {
 
 /*footer start*/
 footer {
-  background-image: url(../assets/footer-bg.jpg);
+  background-image: url(../assets/footer-bg-sm.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
